@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Jogo da Forca
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="">
+
+    <ion-input class="palavra" [(ngModel)]="palavra"></ion-input>
+    <br>
+    <ion-button (click)="jogar()">Jogar</ion-button>
+    <br><br>
+    <ion-input class="oculta" disabled color="danger" [(ngModel)]="palavraOculta">
+    </ion-input>
+
+    <div>
+      <ion-button #button1 (click)="pesquisar(button1,'A')">A</ion-button>
+      <ion-button #button2 (click)="pesquisar(button2,'B')">B</ion-button>
+      <ion-button #button3 (click)="pesquisar(button3,'C')">C</ion-button>
+      <ion-button #button4 (click)="pesquisar(button4,'D')">D</ion-button>
+      <ion-button #button5 (click)="pesquisar(button5,'E')">E</ion-button>
+      <br>
+      <ion-button #button6 (click)="pesquisar(button6,'F')">F</ion-button>
+      <ion-button #button7 (click)="pesquisar(button7,'G')">G</ion-button>
+      <ion-button #button8 (click)="pesquisar(button8,'H')">H</ion-button>
+      <ion-button #button9 (click)="pesquisar(button9,'I')">I</ion-button>
+      <ion-button #button10 (click)="pesquisar(button10,'J')">J</ion-button>
+      <br>
+      <ion-button #button11 (click)="pesquisar(button11,'K')">K</ion-button>
+      <ion-button #button12 (click)="pesquisar(button12,'L')">L</ion-button>
+      <ion-button #button13 (click)="pesquisar(button13,'M')">M</ion-button>
+      <ion-button #button14 (click)="pesquisar(button14,'N')">N</ion-button>
+      <ion-button #button15 (click)="pesquisar(button15,'O')">O</ion-button>
+      <br>
+      <ion-button #button16 (click)="pesquisar(button16,'P')">P</ion-button>
+      <ion-button #button17 (click)="pesquisar(button17,'Q')">Q</ion-button>
+      <ion-button #button18 (click)="pesquisar(button18,'R')">R</ion-button>
+      <ion-button #button19 (click)="pesquisar(button19,'S')">S</ion-button>
+      <ion-button #button20 (click)="pesquisar(button20,'T')">T</ion-button>
+      <br>
+      <ion-button #button21 style="width: 35px;" (click)="pesquisar(button21,'U')">U</ion-button>
+      <ion-button #button22 style="width: 35px;" (click)="pesquisar(button22,'V')">V</ion-button>
+      <ion-button #button23 style="width: 35px;" (click)="pesquisar(button23,'W')">W</ion-button>
+      <ion-button #button24 style="width: 35px;" (click)="pesquisar(button24,'X')">X</ion-button>
+      <ion-button #button25 style="width: 35px;" (click)="pesquisar(button25,'Y')">Y</ion-button>
+      <ion-button #button26 style="width: 35px;" (click)="pesquisar(button26,'Z')">Z</ion-button>
+    </div>
+
+
+    <div></div>
+
+
+
+    <ion-img #img1 src="../../assets/icon/forca-img-1.png"></ion-img>
+
+  </div>
+
+
+
+
+
+</ion-content>
